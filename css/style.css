@@ -1,0 +1,313 @@
+body{
+	font-family: 'Roboto' sans-serif;
+}
+.logo{
+	display: flex;
+	flex-direction:column;
+	justify-content: flex-end;
+}
+.logo p{
+	align-self: center;
+}
+.head-container{
+	display:flex;
+	justify-content:center;
+	gap:2em;	
+}
+
+.nav-infos{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	font-weight:bold;
+}
+.name{
+	align-self:flex-end;
+}
+ul{
+	display:flex;
+	list-style-type:none;
+	justify-content:flex-start;
+	gap:10px;
+
+	
+}
+span{
+	color:#ea9f05; 
+}
+nav a{
+	color: #ea9f05 ;
+}
+
+.content{
+	height:1100px;
+	width:800px;
+	background-color:#101419;
+	margin:auto;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	
+	
+
+	
+}
+.image-boxe{
+	width:75%;
+	height:200px;
+	align-self:center;
+}
+
+
+.items{
+	height:1200px;
+	width:75%;
+	background-color:  #f3f3f3;
+	align-self:center;
+	text-align:center;
+	gap:20px;
+
+}
+.row1{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	padding: 1em;
+	column-gap: 2.5em;
+
+}
+.items1{
+	height:370px;
+	width:400px;
+	background-color: white;
+}
+.items2{
+	height:350px;
+	width:400px;
+	background-color: white;
+}
+.items3{
+	height:350px;
+	width:400px;
+	background-color: white;
+}
+.items4{
+	height:350px;
+	width:400px;
+	background-color: white;
+}
+#img1{
+	height:300px;
+	width:260px;
+}
+#img2{
+	height:300px;
+	width:260px;
+}
+.row2{
+
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	
+	padding: 1em;
+	column-gap: 2.5em;
+	
+}
+#img3{
+	height:300px;
+	width:260px;	
+}
+#img4{
+	height:300px;
+	width:260px;
+}
+
+.infos{
+	display:flex;
+	background-color: #f3f3f3;
+	padding:0.5em;
+	flex-direction:row;
+	justify-content:space-between;
+	
+
+}
+footer {
+	
+	background-color:#282828 ;
+	margin:auto;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width:800px;
+	row-gap: 1em;
+	padding: 2em;
+	z-index: -1;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.feature {
+	display: flex;
+	
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 1em;
+	row-gap: 0.5em;
+
+}
+footer p{
+	
+	align-self: center;
+}
+div[class="feature"] p{
+	width: 8vw;
+}
+div[class="feature"] img{
+	align-self: center;
+	width: 60px;
+	height: 60px;
+}
+div[class="infos"] p{
+	padding-top: 1em;
+}
+button{
+	background-color:#282828;
+	color:white;
+	border:none;
+	max-width: auto;
+	height: 50%;
+	padding:0.5em 0.5em;
+}
+
+p.infos{
+	margin:2em;
+
+}
+
+p>span{
+	text-decoration: line-through;
+	color:black;
+}
+.copy{
+	display:flex;
+	justify-content:center;
+}
+.contact>ul{
+	
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	margin-left: 6%;
+	width: 575px;
+	position: absolute;
+	z-index: 2;
+	height: 25px;
+	top: 1190px;
+}
+div[class="contact contact-resp"]>ul>li a{
+	color: grey;
+}
+/*RESPONSIVE */
+@media(max-width: 768px){
+	.container{
+		height: 100%;
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+	}
+	.head-container{
+		width: 100%;
+		flex-direction: column;
+		padding: 2em;
+	}
+	._logo{
+		align-self: center;
+	}
+	.name{
+		justify-content: end;
+	}
+	.responsive-image{
+		/* max-width: 100%; */
+		height: auto;
+	}
+	div[class="logo"] p{
+		margin-top: 0.5em;
+		margin-left: 4.2em;
+	}
+	nav>ul{
+		display: flex;
+		margin-left: -3.8em;
+	}
+	.items{
+		height: 100%;
+		width: 75%;
+	}
+	.content{
+		height: 100%;
+		width: 60%;
+	}
+	footer{
+		height: 100%;
+		width: 60%;
+	}
+	
+	.row1{
+		display:flex;
+		flex-direction:column;
+		/* justify-content:flex-start; */
+		
+	}
+	.row2{
+		display: flex;
+		flex-direction: column;
+	}
+	#img1{
+		width: 100%;
+		height: 70%;
+	}
+	#img2{
+		width: 100%;
+		height: 70%;
+	}
+	#img3{
+		width: 100%;
+		height: 70%;
+	}
+	#img4{
+		width: 100%;
+		height: 70%;
+	}
+	.grid-container::before{
+		position: absolute;
+	}
+	.grid-container{
+		display: grid;
+		grid-template-columns: 30% 30%;
+		column-gap: 3em;
+		margin: auto;	
+		padding :30px 40px 30px 40px;	
+	}
+	#grid-item{
+		width: 30%;
+		height: 100%;
+	}
+	div[id="grid-item"] p{
+		width:25vw;
+	}
+
+	.contact-resp>ul{
+	
+		display: flex;
+		justify-content: center;
+		background-color: white;
+		margin-left: 8%;
+		width: 338px;
+		position: absolute;
+		z-index: 2;
+		height: 20px;
+		top: 2077px;
+	}
+}	
